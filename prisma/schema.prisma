@@ -1,0 +1,22 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:../database/database.db"
+}
+
+model Noticia{
+  codigo Int @id @default(autoincrement())
+  titulo String
+  descricao String
+  image String
+  conteudo String
+  data DateTime
+  autor String
+  @@map(name:"tbnoticia")
+}

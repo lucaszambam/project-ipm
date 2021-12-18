@@ -1,0 +1,1 @@
+Rodar "node update" depois "npx prisma generate"

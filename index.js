@@ -28,8 +28,15 @@ app.get('/api/noticias', async (req, res) => {
     res.send(a);
 });
 
+app.get('/api/noticias/:id', async (req, res) => {
+    const users = await prisma.noticia.findUnique({where: {codigo: parseInt(req.params.id)}});
+
+    res.send(users);
+
+});
+
 
 //Inicializa Server
-app.listen('80', '192.168.16.1');
+app.listen('80', '10.4.240.83');
 
 

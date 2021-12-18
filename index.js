@@ -30,7 +30,7 @@ app.get('/api/noticias', async (req, res) => {
 
 app.get('/api/noticias/:id', async (req, res) => {
     const users = await prisma.noticia.findUnique({where: {codigo: parseInt(req.params.id)}});
-
+    users.image = req.get('host') + '/images/' + users.image;
     res.send(users);
 
 });

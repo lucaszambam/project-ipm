@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testes Request</title>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  </head>
-  <body>
-    <script>
-      axios.get("/api/noticias").then((res) => {
 
-        console.log(res.data);
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testes Request</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>s
 
-      });
-    </script>
-  </body>
+<body>
+  <div class="quadrado">
+
+  </div>
+  <script>
+
+
+
+
+    axios.get('http://localhost/api/noticias').then(function (res) {
+      console.log(res.data);
+    }).catch(function (error) {
+        console.log(error);
+    });
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
 </html>

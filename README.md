@@ -5,11 +5,11 @@ I built this website as an assignment to my *Front-End* class in IPM Sistemas.
 ### To run the server with the API, take the following steps below:
 Inside *cmd* run the following command:
 ```
-1. At console: "npm update" 
+1. "npm update" 
 ```
 ```
-2. At console: "npx prisma generate"
+2. "npx prisma generate"
 ```
 ```
-3. At console: "node index.js"
+3. "node index.js"
 ```

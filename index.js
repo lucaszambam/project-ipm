@@ -43,14 +43,14 @@ app.use('/images', express.static('images'));
 app.get('/api/noticias', async (req, res) => {
     const a = await prisma.noticia.findMany();
     a.map((e) => {
-        e.image = req.get('host') + '/images/' + e.image;
+        e.image = 'http://'+req.get('host') + '/images/' + e.image;
     });
     res.send(a);
 });
 
 app.get('/api/noticias/:id', async (req, res) => {
     const users = await prisma.noticia.findUnique({ where: { codigo: parseInt(req.params.id) } });
-    users.image = req.get('host') + '/images/' + users.image;
+    users.image = 'http://'+ req.get('host') + '/images/' + users.image;
     res.send(users);
 
 });

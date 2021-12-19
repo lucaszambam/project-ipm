@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+
+#open-notice-body{
+    padding: 30px;
+}
+.open-notice{
+    padding: 30px;
+}
+
+.titulo{
+    font-family: "Montserrat";
+    font-size: 30px;
+}
+
+.descricao{
+    font-family: "Kanit";
+    color: black;
+    font-weight: 900;
+}
+
+#header-line{
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 0, 0);
+}
+#header-end{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.autor, .data{
+    font-family: "Kanit";
+    font-style: bold;
+    color: black;
+    font-weight: 900;
+}
+.container-main-notice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#all-image-container{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#only-image-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#image{
+    width: 60%;
+    display: flex;
+}
+#img-desc{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Kanit";
+
+}
+
+#conteudo{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Kanit";
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}

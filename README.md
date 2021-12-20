@@ -1,5 +1,5 @@
 # IPM Sistemas Front-End Project
-This is an open project to learn about HTML, CSS and jQuery in which i built a respnsive website.
+This is an open project to learn about HTML, CSS and jQuery in which i built a responsive website.
 ## Purposes
 I built this website as an assignment to my *Front-End* class in IPM Sistemas.
 ### To run the server, take the following steps below:

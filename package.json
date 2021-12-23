@@ -1,10 +1,12 @@
 {
+  
   "name": "backend-curso",
   "version": "1.0.0",
   "description": "Backend para o projeto do curso de jovens talentos da IPM sistemas",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "prisma": {
